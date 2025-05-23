@@ -132,7 +132,7 @@ if(toswitch.length==2){
 let ch=gather.map(a=>a.id).filter(a=>a)
 let me = ch.includes(chars[b].id)
 let ev=ch.every((a)=>a)
-aud.currentTime=0;
+aud.currentTime=0.2;
     if(!me){
         console.log(ev,me)
         console.log(chars[b].id)
