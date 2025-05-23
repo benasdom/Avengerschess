@@ -1,4 +1,15 @@
 @media (max-width:800px) {
+.blacks{
+       filter:
+    drop-shadow(0px 0px 1px rgb(62, 62, 86))
+    drop-shadow(0px 0px 1px rgb(62, 62, 86))
+    drop-shadow(0px 0px 1px rgb(62, 62, 86))
+    drop-shadow(0px 0px 1px rgb(62, 62, 86))
+    drop-shadow(0px 0px 1px rgb(62, 62, 86))
+    drop-shadow(0px 0px 1px rgb(62, 62, 86))
+    drop-shadow(0px 0px 1px rgb(62, 62, 86));
+}
+}
 .square{
     transform: scale(1.3);
 }
