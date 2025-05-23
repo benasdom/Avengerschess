@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <script defer src="pieces.js"></script>
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <div class="players" >
+        <div class="scr">    <p next></p>
+            plays next !</div>
+        <div class="nextp">
+            
+        <div class="screen" onclick="full()"><span>screen fill</span></div>
+        <div class="screen" onclick="leave()"><span>return</span></div>
+        </div>
+        <div class="scr"> Players</div>
+
+        <div  class="nextp">
+            <i white>♟️</i> <span users contenteditable="">player1</span>
+            </div>
+            <div class="scr"> Vrs</div>
+            <div class="nextp">
+                <i>♟️</i> <span users contenteditable="">player2</span>
+            </div>
+
+            <div class="btns">
+                <div class="save" onclick="save()"> Save</div>
+                <div class="save" onclick="localStorage.clear()"> reset</div>
+            </div>
+         
+
+            <div  class="nextp">
+                <i white>♟️</i> <marquee stor ></marquee>
+                </div>
+            <div class="nextp">
+                <i>♟️</i> <marquee stor ></marquee>
+            </div>
+    </div>
+    <div id="gameboard">
+    </div>
+    <div class="preface">
+        <div class="skip">                <div class="save" onclick="this.parentElement.parentElement.style.cssText='display:none'"> skip</div>
+    </div>
+        <div class="tit">Avengers Chess !</div>
+        <div class="tit">Background Story of a disgrunted queen 📜 </div>
+
+        <div class="marquee" >
+            <marquee direction="up" class="mar">
+                When Virelia fell, Queen Elira lost everything—her crown, her kingdom, and her king, who died days after the war ended.
+                
+                She wandered the ruins in silence until she found Sir Caelis, the last surviving knight. He did not offer comfort—only a lesson.
+                
+                “Move like them,” he said. “But strike like something they never saw coming.”
+                
+                He taught her the knight’s leap—the art of bending paths, of jumping over obstacles, of breaking patterns.
+                
+                And when she returned, she was not just a queen.
+                
+                She was vengeance with a new shape.
+                
+                She was the Avenger.
+                With the help of the night she taught her remaining warriors the art of jumping over pieces.
+            </marquee>
+            </div>
+    </div>
+</body>
+</html>

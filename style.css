@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Fascinate+Inline&family=Michroma&family=Playwrite+IT+Moderna:wght@100..400&family=Righteous&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    transition: all .4s ease-in-out;
+    color:whitesmoke;
+    user-select: none;
+    font-family: "Advent Pro", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+html{
+    background:rgb(11, 0, 21);
+}
+.abs{
+    position:absolute;
+    font-size: 4px;
+    margin-top:-26px;
+    color:rgb(90, 95, 99);
+    margin-left:-26px;
+}
+.active{
+    background:radial-gradient(rgba(200,201,230,.4),transparent 90%) !important;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.square{
+    border:1px solid rgb(39, 0, 72);
+    border-radius: 10px;
+    transform: scale(1.7);
+    opacity: 0;
+    margin-bottom: -100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    pointer-events: none;
+
+    width:calc(8 * 40px);
+    flex-wrap: wrap;
+    animation: slide 1s ease-in forwards;
+}
+@keyframes slide {
+    100%{
+        opacity: 1;
+        margin-bottom:0;
+    }
+}
+i[white]{
+    filter:brightness(2);
+}
+.players{
+    position:absolute;
+    z-index: 1;
+    background:rgba(230, 233, 233, 0.09);
+    border-radius: 10px;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:20px;
+    margin-right:20px;
+    right: 0;
+    top:0;
+}
+.screen{
+    min-width:100px;
+    padding:5px;
+    border-radius:10px;
+    font-size: 25px;
+    margin:10px;
+    text-align:center;
+    background:rgba(230, 233, 233, 0.09);
+}
+*::-webkit-scrollbar{
+    width:0px;
+    height:0px;
+}
+.preface{
+    position:absolute;
+    height:100vh;
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(4rem);
+    backdrop-filter: blur(4rem);
+    display: flex;
+    align-items: center;
+    z-index:10000;
+    padding:20px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.skip{
+    height:10vh;
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tit{
+    height: 20vh;
+    font-size: 40px;
+    color:brown;
+    text-align: center;
+
+}
+.marquee{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.mar{
+    width:50%;
+    padding-top:100px;
+    background:rgba(31, 0, 0, 0.111);
+    color:white;
+    text-align: center;
+    margin:0 auto;
+    line-height: 90px;
+    font-size: 30px;
+    height:50vh;
+}
+.nextp span{
+    overflow: hidden;
+    height: 100%;
+    padding-left:10px;
+    max-height:calc(100%-5px);
+    display: inline;
+}
+[stor] svg{
+    width:25px;
+    height:25px;
+    margin-bottom: -10px;
+}
+    [stor]{
+    width:250px;
+    border:5px solid transparent;
+    border-top:10px;
+
+    background:rgba(0, 0, 0, 0.176);
+    border-radius: 10px;
+    height:calc(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: clip;
+    overflow-x: scroll;
+}
+[next]{
+    height:15px;
+    width:15px;
+    border-radius: 50%;
+    margin:auto;
+    top:0;
+    border:2px solid black;
+    background:rgba(255, 255, 255);
+}
+    .nextp,.src{
+    padding:10px;
+    border-radius: 10px;
+    background:rgba(230, 233, 233, 0.09);
+    color:whitesmoke;
+    margin:10px;
+    text-align:center;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    overflow: hidden;
+    overflow-x:scroll;
+    font-size: 30px;
+    width:300px;
+
+}
+.scr{
+    border-radius: 5px;
+    color:rgb(179, 174, 174);
+    width:inline;
+    margin:0 auto;
+}
+.invalid{
+position:absolute;
+top:0;
+visibility:hidden;
+pointer-events: none;
+user-select: none;
+}
+.pieces:hover svg{
+    transform:scale(1.2);
+}
+.save:active{
+    opacity: .1;
+}
+.btns{
+    display: flex;
+    width:250px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+    .save{
+    height: 50px;
+    border-radius: 10px;
+    width:49%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    background:rgb(196, 178, 143);
+    color:black;
+
+}
+.pieces:active{
+    cursor:grab;
+
+}
+    .pieces:hover{
+    filter:brightness(2)
+}
+        .pieces{
+    width:40px;
+    height:40px;
+    background:rgb(6, 4, 14);
+    display: flex;
+    pointer-events: all;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+    inset 1px 1px 1px black,
+    inset 1px 1px 1px black,
+    inset 1px 1px 1px black,
+    inset 1px 1px 1px black;
+
+}
+
+.pieces svg{
+    width: 25px;
+    height: 25px;
+  
+}
+.turn{
+    filter:invert(1) !important;
+}
+.pieces:nth-child(even){
+    background:rgb(19, 19, 34);
+}
+.blacks{
+    pointer-events: none;
+    filter:
+    drop-shadow(0px 0px .3px rgb(62, 62, 86))
+    drop-shadow(0px 0px .3px rgb(62, 62, 86))
+    drop-shadow(0px 0px .3px rgb(62, 62, 86))
+    drop-shadow(0px 0px .3px rgb(62, 62, 86))
+    drop-shadow(0px 0px .3px rgb(62, 62, 86))
+    drop-shadow(0px 0px .3px rgb(62, 62, 86))
+    drop-shadow(0px 0px .3px rgb(62, 62, 86));
+}
+.whites{
+    fill:rgb(146, 152, 157);
+    filter:unset;
+    pointer-events: all !important;
+    filter:
+    drop-shadow(0px 0px .3px black)
+    drop-shadow(0px 0px .3px black)
+    drop-shadow(0px 0px .3px black)
+    drop-shadow(0px 0px .3px black)
+    drop-shadow(0px 0px .3px black)
+    drop-shadow(0px 0px .3px black)
+    drop-shadow(0px 0px .3px black) !important;
+}
+
+p{
+    filter:none !important;
+}
