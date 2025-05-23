@@ -1,4 +1,6 @@
 let u='div class="pieces" id="'
+let aud=new Audio("files/aud.m4a")
+
 let [toswitch,startpieces,v,bl,conqurered,grid,pieces]=[[],"ppppppppl"+"rnbqkbnrl",
 [..."abcdefgh"],true,[],[],
 {l:'<div class="pieces invalid"></div>',
@@ -130,7 +132,7 @@ if(toswitch.length==2){
 let ch=gather.map(a=>a.id).filter(a=>a)
 let me = ch.includes(chars[b].id)
 let ev=ch.every((a)=>a)
-console.log(ch);
+aud.currentTime=0;
     if(!me){
         console.log(ev,me)
         console.log(chars[b].id)
@@ -152,7 +154,10 @@ else{
 
 })})
 let next=document.querySelector("[next]")
+
+
 const exchange=(c)=>{
+aud.play();
     gather=[]
 
 c && chars.forEach(a=>{
