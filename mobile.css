@@ -1,4 +1,7 @@
 @media (max-width:800px) {
+.square{
+    transform: scale(1.3);
+}
 .players,.preface{
     display:none;
 }
