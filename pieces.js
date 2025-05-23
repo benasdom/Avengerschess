@@ -157,6 +157,7 @@ let next=document.querySelector("[next]")
 
 
 const exchange=(c)=>{
+aud.playbackRate=2.3
 aud.play();
     gather=[]
 
